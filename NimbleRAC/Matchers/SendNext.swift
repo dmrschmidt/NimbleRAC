@@ -2,12 +2,12 @@ import Foundation
 import Nimble
 import ReactiveCocoa
 
-/// A Nimble matcher that succeeds when the actual value is nil.
-public func sendNext(expected: String) -> MatcherFunc<SignalProducer<String, NSError>> {
-    return MatcherFunc { actualExpression, failureMessage in
+/// A Nimble matcher that succeeds when the correct value is send.
+public func sendNext<T: SignalProducerType where T.Value: Equatable>(expected: T.Value) -> NonNilMatcherFunc<T> {
+    return NonNilMatcherFunc { actualExpression, failureMessage in
         failureMessage.postfixMessage = "send next"
 
-        var actualValue: String?
+        var actualValue: T.Value?
         if let producer = try actualExpression.evaluate() {
             producer.startWithNext { next in actualValue = next }
         }
