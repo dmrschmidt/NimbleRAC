@@ -1,0 +1,4 @@
+github "ReactiveCocoa/ReactiveCocoa" ~> 4.0
+github "Quick/Quick" ~> 0.9
+github "Quick/Nimble" ~> 3.1
+
