@@ -6,10 +6,10 @@ import ReactiveCocoa
 public func complete<T: SignalProducerType>() -> NonNilMatcherFunc<T> {
     return NonNilMatcherFunc { actualExpression, failureMessage in
         failureMessage.postfixMessage = "complete"
-        let actualValue = try actualExpression.evaluate()
+        guard let producer = try actualExpression.evaluate() else { return false }
 
         var completed = false
-        actualValue?.startWithCompleted { completed = true }
+        producer.startWithCompleted { completed = true }
 
         return completed
     }
