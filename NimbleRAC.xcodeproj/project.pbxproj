@@ -23,6 +23,14 @@
 		C333BC101C691362007210ED /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBFC1C6912D3007210ED /* Quick.framework */; };
 		C333BC121C691431007210ED /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBFB1C6912D3007210ED /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C333BC131C691431007210ED /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBFC1C6912D3007210ED /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C333BC151C69150D007210ED /* Complete.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333BC141C69150D007210ED /* Complete.swift */; };
+		C333BC171C691518007210ED /* CompleteSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333BC161C691518007210ED /* CompleteSpec.swift */; };
+		C333BC181C69196E007210ED /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBFD1C6912D3007210ED /* ReactiveCocoa.framework */; };
+		C333BC191C691978007210ED /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBFE1C6912D3007210ED /* Result.framework */; };
+		C333BC1A1C69199B007210ED /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBFD1C6912D3007210ED /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C333BC1B1C69199B007210ED /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBFE1C6912D3007210ED /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C333BC1E1C692073007210ED /* SendSomething.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333BC1D1C692073007210ED /* SendSomething.swift */; };
+		C333BC201C69207F007210ED /* SendSomethingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333BC1F1C69207F007210ED /* SendSomethingSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C333BC1A1C69199B007210ED /* ReactiveCocoa.framework in CopyFiles */,
+				C333BC1B1C69199B007210ED /* Result.framework in CopyFiles */,
 				C333BC121C691431007210ED /* Nimble.framework in CopyFiles */,
 				C333BC131C691431007210ED /* Quick.framework in CopyFiles */,
 			);
@@ -74,6 +84,10 @@
 		C333BBFE1C6912D3007210ED /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		C333BC091C691323007210ED /* SendNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendNext.swift; sourceTree = "<group>"; };
 		C333BC0C1C69132D007210ED /* SendNextSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendNextSpec.swift; sourceTree = "<group>"; };
+		C333BC141C69150D007210ED /* Complete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Complete.swift; sourceTree = "<group>"; };
+		C333BC161C691518007210ED /* CompleteSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteSpec.swift; sourceTree = "<group>"; };
+		C333BC1D1C692073007210ED /* SendSomething.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSomething.swift; sourceTree = "<group>"; };
+		C333BC1F1C69207F007210ED /* SendSomethingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSomethingSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C333BC191C691978007210ED /* Result.framework in Frameworks */,
+				C333BC181C69196E007210ED /* ReactiveCocoa.framework in Frameworks */,
 				C333BC0F1C691362007210ED /* Nimble.framework in Frameworks */,
 				C333BC101C691362007210ED /* Quick.framework in Frameworks */,
 				C333BBEC1C691262007210ED /* NimbleRAC.framework in Frameworks */,
@@ -143,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				C333BC091C691323007210ED /* SendNext.swift */,
+				C333BC141C69150D007210ED /* Complete.swift */,
+				C333BC1D1C692073007210ED /* SendSomething.swift */,
 			);
 			path = Matchers;
 			sourceTree = "<group>";
@@ -151,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				C333BC0C1C69132D007210ED /* SendNextSpec.swift */,
+				C333BC161C691518007210ED /* CompleteSpec.swift */,
+				C333BC1F1C69207F007210ED /* SendSomethingSpec.swift */,
 			);
 			path = Matchers;
 			sourceTree = "<group>";
@@ -189,6 +209,7 @@
 				C333BBDE1C691262007210ED /* Headers */,
 				C333BBDF1C691262007210ED /* Resources */,
 				C333BC031C6912D7007210ED /* CopyFiles */,
+				C333BC1C1C691D9D007210ED /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -271,11 +292,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C333BC1C1C691D9D007210ED /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C333BBDC1C691262007210ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C333BC151C69150D007210ED /* Complete.swift in Sources */,
+				C333BC1E1C692073007210ED /* SendSomething.swift in Sources */,
 				C333BC0A1C691323007210ED /* SendNext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +324,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C333BC201C69207F007210ED /* SendSomethingSpec.swift in Sources */,
 				C333BC0D1C69132D007210ED /* SendNextSpec.swift in Sources */,
+				C333BC171C691518007210ED /* CompleteSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

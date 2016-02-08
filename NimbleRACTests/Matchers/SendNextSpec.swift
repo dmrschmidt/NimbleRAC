@@ -1,16 +1,26 @@
 import Quick
 import Nimble
+import ReactiveCocoa
 @testable import NimbleRAC
 
 class SendNextSpec: QuickSpec {
     override func spec() {
         describe("sendNext") {
-            beforeEach { }
+            var producer: SignalProducer<String, NSError>!
 
-            describe("-pickImageFromLibrary") {
-                it("does stuff") {
-                    expect("foo").to(sendNext())
-                }
+            it("positively matches when sending correct Next") {
+                producer = SignalProducer<String, NSError>(value: "foo")
+                expect(producer).to(sendNext("foo"))
+            }
+
+            it("negatively matches when sending different Next") {
+                producer = SignalProducer<String, NSError>(value: "foo")
+                expect(producer).toNot(sendNext("bar"))
+            }
+
+            it("negatively matches when not sending anything") {
+                producer = SignalProducer<String, NSError>.never
+                expect(producer).toNot(sendNext("bar"))
             }
         }
     }
