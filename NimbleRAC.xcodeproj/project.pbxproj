@@ -7,125 +7,161 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C333BBA61C69062A007210ED /* NimbleRAC.h in Headers */ = {isa = PBXBuildFile; fileRef = C333BBA51C69062A007210ED /* NimbleRAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C333BBAD1C69062A007210ED /* NimbleRAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBA21C69062A007210ED /* NimbleRAC.framework */; };
-		C333BBB21C69062A007210ED /* NimbleRACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333BBB11C69062A007210ED /* NimbleRACTests.swift */; };
-		C333BBC01C690B00007210ED /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBBC1C690B00007210ED /* Nimble.framework */; };
-		C333BBC11C690B00007210ED /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBBD1C690B00007210ED /* Quick.framework */; };
-		C333BBC21C690B00007210ED /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBBE1C690B00007210ED /* ReactiveCocoa.framework */; };
-		C333BBC31C690B00007210ED /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBBF1C690B00007210ED /* Result.framework */; };
-		C333BBC51C690B17007210ED /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBBC1C690B00007210ED /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C333BBC61C690B17007210ED /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBBD1C690B00007210ED /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C333BBC71C690B17007210ED /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBBE1C690B00007210ED /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C333BBC81C690B17007210ED /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBBF1C690B00007210ED /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C333BBE51C691262007210ED /* NimbleRAC.h in Headers */ = {isa = PBXBuildFile; fileRef = C333BBE41C691262007210ED /* NimbleRAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C333BBEC1C691262007210ED /* NimbleRAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBE11C691262007210ED /* NimbleRAC.framework */; };
+		C333BBFF1C6912D3007210ED /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBFB1C6912D3007210ED /* Nimble.framework */; };
+		C333BC001C6912D3007210ED /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBFC1C6912D3007210ED /* Quick.framework */; };
+		C333BC011C6912D3007210ED /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBFD1C6912D3007210ED /* ReactiveCocoa.framework */; };
+		C333BC021C6912D3007210ED /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBFE1C6912D3007210ED /* Result.framework */; };
+		C333BC041C6912E0007210ED /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBFB1C6912D3007210ED /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C333BC051C6912E0007210ED /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBFC1C6912D3007210ED /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C333BC061C6912E0007210ED /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBFD1C6912D3007210ED /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C333BC071C6912E0007210ED /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBFE1C6912D3007210ED /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C333BC0A1C691323007210ED /* SendNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333BC091C691323007210ED /* SendNext.swift */; };
+		C333BC0D1C69132D007210ED /* SendNextSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333BC0C1C69132D007210ED /* SendNextSpec.swift */; };
+		C333BC0F1C691362007210ED /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBFB1C6912D3007210ED /* Nimble.framework */; };
+		C333BC101C691362007210ED /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333BBFC1C6912D3007210ED /* Quick.framework */; };
+		C333BC121C691431007210ED /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBFB1C6912D3007210ED /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C333BC131C691431007210ED /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBFC1C6912D3007210ED /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C333BBAE1C69062A007210ED /* PBXContainerItemProxy */ = {
+		C333BBED1C691262007210ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C333BB991C69062A007210ED /* Project object */;
+			containerPortal = C333BBD81C691262007210ED /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C333BBA11C69062A007210ED;
+			remoteGlobalIDString = C333BBE01C691262007210ED;
 			remoteInfo = NimbleRAC;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C333BBC41C690B0E007210ED /* CopyFiles */ = {
+		C333BC031C6912D7007210ED /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C333BBC51C690B17007210ED /* Nimble.framework in CopyFiles */,
-				C333BBC61C690B17007210ED /* Quick.framework in CopyFiles */,
-				C333BBC71C690B17007210ED /* ReactiveCocoa.framework in CopyFiles */,
-				C333BBC81C690B17007210ED /* Result.framework in CopyFiles */,
+				C333BC041C6912E0007210ED /* Nimble.framework in CopyFiles */,
+				C333BC051C6912E0007210ED /* Quick.framework in CopyFiles */,
+				C333BC061C6912E0007210ED /* ReactiveCocoa.framework in CopyFiles */,
+				C333BC071C6912E0007210ED /* Result.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C333BC111C691429007210ED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C333BC121C691431007210ED /* Nimble.framework in CopyFiles */,
+				C333BC131C691431007210ED /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C333BBA21C69062A007210ED /* NimbleRAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NimbleRAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C333BBA51C69062A007210ED /* NimbleRAC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NimbleRAC.h; sourceTree = "<group>"; };
-		C333BBA71C69062A007210ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C333BBAC1C69062A007210ED /* NimbleRACTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbleRACTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C333BBB11C69062A007210ED /* NimbleRACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleRACTests.swift; sourceTree = "<group>"; };
-		C333BBB31C69062A007210ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C333BBBC1C690B00007210ED /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		C333BBBD1C690B00007210ED /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		C333BBBE1C690B00007210ED /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
-		C333BBBF1C690B00007210ED /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		C333BBE11C691262007210ED /* NimbleRAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NimbleRAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C333BBE41C691262007210ED /* NimbleRAC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NimbleRAC.h; sourceTree = "<group>"; };
+		C333BBE61C691262007210ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C333BBEB1C691262007210ED /* NimbleRACTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbleRACTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C333BBF21C691262007210ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C333BBFB1C6912D3007210ED /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		C333BBFC1C6912D3007210ED /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		C333BBFD1C6912D3007210ED /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		C333BBFE1C6912D3007210ED /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		C333BC091C691323007210ED /* SendNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendNext.swift; sourceTree = "<group>"; };
+		C333BC0C1C69132D007210ED /* SendNextSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendNextSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C333BB9E1C69062A007210ED /* Frameworks */ = {
+		C333BBDD1C691262007210ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C333BBC01C690B00007210ED /* Nimble.framework in Frameworks */,
-				C333BBC11C690B00007210ED /* Quick.framework in Frameworks */,
-				C333BBC21C690B00007210ED /* ReactiveCocoa.framework in Frameworks */,
-				C333BBC31C690B00007210ED /* Result.framework in Frameworks */,
+				C333BBFF1C6912D3007210ED /* Nimble.framework in Frameworks */,
+				C333BC001C6912D3007210ED /* Quick.framework in Frameworks */,
+				C333BC011C6912D3007210ED /* ReactiveCocoa.framework in Frameworks */,
+				C333BC021C6912D3007210ED /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C333BBA91C69062A007210ED /* Frameworks */ = {
+		C333BBE81C691262007210ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C333BBAD1C69062A007210ED /* NimbleRAC.framework in Frameworks */,
+				C333BC0F1C691362007210ED /* Nimble.framework in Frameworks */,
+				C333BC101C691362007210ED /* Quick.framework in Frameworks */,
+				C333BBEC1C691262007210ED /* NimbleRAC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C333BB981C69062A007210ED = {
+		C333BBD71C691262007210ED = {
 			isa = PBXGroup;
 			children = (
-				C333BBC91C690B34007210ED /* Frameworks */,
-				C333BBA41C69062A007210ED /* NimbleRAC */,
-				C333BBB01C69062A007210ED /* NimbleRACTests */,
-				C333BBA31C69062A007210ED /* Products */,
+				C333BC0E1C69134C007210ED /* Frameworks */,
+				C333BBE31C691262007210ED /* NimbleRAC */,
+				C333BBEF1C691262007210ED /* NimbleRACTests */,
+				C333BBE21C691262007210ED /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C333BBA31C69062A007210ED /* Products */ = {
+		C333BBE21C691262007210ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C333BBA21C69062A007210ED /* NimbleRAC.framework */,
-				C333BBAC1C69062A007210ED /* NimbleRACTests.xctest */,
+				C333BBE11C691262007210ED /* NimbleRAC.framework */,
+				C333BBEB1C691262007210ED /* NimbleRACTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C333BBA41C69062A007210ED /* NimbleRAC */ = {
+		C333BBE31C691262007210ED /* NimbleRAC */ = {
 			isa = PBXGroup;
 			children = (
-				C333BBA51C69062A007210ED /* NimbleRAC.h */,
-				C333BBA71C69062A007210ED /* Info.plist */,
+				C333BC081C691323007210ED /* Matchers */,
+				C333BBE41C691262007210ED /* NimbleRAC.h */,
+				C333BBE61C691262007210ED /* Info.plist */,
 			);
 			path = NimbleRAC;
 			sourceTree = "<group>";
 		};
-		C333BBB01C69062A007210ED /* NimbleRACTests */ = {
+		C333BBEF1C691262007210ED /* NimbleRACTests */ = {
 			isa = PBXGroup;
 			children = (
-				C333BBB11C69062A007210ED /* NimbleRACTests.swift */,
-				C333BBB31C69062A007210ED /* Info.plist */,
+				C333BC0B1C69132D007210ED /* Matchers */,
+				C333BBF21C691262007210ED /* Info.plist */,
 			);
 			path = NimbleRACTests;
 			sourceTree = "<group>";
 		};
-		C333BBC91C690B34007210ED /* Frameworks */ = {
+		C333BC081C691323007210ED /* Matchers */ = {
 			isa = PBXGroup;
 			children = (
-				C333BBBC1C690B00007210ED /* Nimble.framework */,
-				C333BBBD1C690B00007210ED /* Quick.framework */,
-				C333BBBE1C690B00007210ED /* ReactiveCocoa.framework */,
-				C333BBBF1C690B00007210ED /* Result.framework */,
+				C333BC091C691323007210ED /* SendNext.swift */,
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
+		C333BC0B1C69132D007210ED /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				C333BC0C1C69132D007210ED /* SendNextSpec.swift */,
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
+		C333BC0E1C69134C007210ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C333BBFB1C6912D3007210ED /* Nimble.framework */,
+				C333BBFC1C6912D3007210ED /* Quick.framework */,
+				C333BBFD1C6912D3007210ED /* ReactiveCocoa.framework */,
+				C333BBFE1C6912D3007210ED /* Result.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,26 +169,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C333BB9F1C69062A007210ED /* Headers */ = {
+		C333BBDE1C691262007210ED /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C333BBA61C69062A007210ED /* NimbleRAC.h in Headers */,
+				C333BBE51C691262007210ED /* NimbleRAC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C333BBA11C69062A007210ED /* NimbleRAC */ = {
+		C333BBE01C691262007210ED /* NimbleRAC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C333BBB61C69062A007210ED /* Build configuration list for PBXNativeTarget "NimbleRAC" */;
+			buildConfigurationList = C333BBF51C691262007210ED /* Build configuration list for PBXNativeTarget "NimbleRAC" */;
 			buildPhases = (
-				C333BB9D1C69062A007210ED /* Sources */,
-				C333BB9E1C69062A007210ED /* Frameworks */,
-				C333BB9F1C69062A007210ED /* Headers */,
-				C333BBA01C69062A007210ED /* Resources */,
-				C333BBC41C690B0E007210ED /* CopyFiles */,
+				C333BBDC1C691262007210ED /* Sources */,
+				C333BBDD1C691262007210ED /* Frameworks */,
+				C333BBDE1C691262007210ED /* Headers */,
+				C333BBDF1C691262007210ED /* Resources */,
+				C333BC031C6912D7007210ED /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -160,72 +196,73 @@
 			);
 			name = NimbleRAC;
 			productName = NimbleRAC;
-			productReference = C333BBA21C69062A007210ED /* NimbleRAC.framework */;
+			productReference = C333BBE11C691262007210ED /* NimbleRAC.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C333BBAB1C69062A007210ED /* NimbleRACTests */ = {
+		C333BBEA1C691262007210ED /* NimbleRACTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C333BBB91C69062A007210ED /* Build configuration list for PBXNativeTarget "NimbleRACTests" */;
+			buildConfigurationList = C333BBF81C691262007210ED /* Build configuration list for PBXNativeTarget "NimbleRACTests" */;
 			buildPhases = (
-				C333BBA81C69062A007210ED /* Sources */,
-				C333BBA91C69062A007210ED /* Frameworks */,
-				C333BBAA1C69062A007210ED /* Resources */,
+				C333BBE71C691262007210ED /* Sources */,
+				C333BBE81C691262007210ED /* Frameworks */,
+				C333BBE91C691262007210ED /* Resources */,
+				C333BC111C691429007210ED /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C333BBAF1C69062A007210ED /* PBXTargetDependency */,
+				C333BBEE1C691262007210ED /* PBXTargetDependency */,
 			);
 			name = NimbleRACTests;
 			productName = NimbleRACTests;
-			productReference = C333BBAC1C69062A007210ED /* NimbleRACTests.xctest */;
+			productReference = C333BBEB1C691262007210ED /* NimbleRACTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C333BB991C69062A007210ED /* Project object */ = {
+		C333BBD81C691262007210ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Dennis Schmidt";
 				TargetAttributes = {
-					C333BBA11C69062A007210ED = {
+					C333BBE01C691262007210ED = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
-					C333BBAB1C69062A007210ED = {
+					C333BBEA1C691262007210ED = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
-			buildConfigurationList = C333BB9C1C69062A007210ED /* Build configuration list for PBXProject "NimbleRAC" */;
+			buildConfigurationList = C333BBDB1C691262007210ED /* Build configuration list for PBXProject "NimbleRAC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = C333BB981C69062A007210ED;
-			productRefGroup = C333BBA31C69062A007210ED /* Products */;
+			mainGroup = C333BBD71C691262007210ED;
+			productRefGroup = C333BBE21C691262007210ED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C333BBA11C69062A007210ED /* NimbleRAC */,
-				C333BBAB1C69062A007210ED /* NimbleRACTests */,
+				C333BBE01C691262007210ED /* NimbleRAC */,
+				C333BBEA1C691262007210ED /* NimbleRACTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C333BBA01C69062A007210ED /* Resources */ = {
+		C333BBDF1C691262007210ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C333BBAA1C69062A007210ED /* Resources */ = {
+		C333BBE91C691262007210ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -235,33 +272,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C333BB9D1C69062A007210ED /* Sources */ = {
+		C333BBDC1C691262007210ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C333BC0A1C691323007210ED /* SendNext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C333BBA81C69062A007210ED /* Sources */ = {
+		C333BBE71C691262007210ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C333BBB21C69062A007210ED /* NimbleRACTests.swift in Sources */,
+				C333BC0D1C69132D007210ED /* SendNextSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C333BBAF1C69062A007210ED /* PBXTargetDependency */ = {
+		C333BBEE1C691262007210ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C333BBA11C69062A007210ED /* NimbleRAC */;
-			targetProxy = C333BBAE1C69062A007210ED /* PBXContainerItemProxy */;
+			target = C333BBE01C691262007210ED /* NimbleRAC */;
+			targetProxy = C333BBED1C691262007210ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		C333BBB41C69062A007210ED /* Debug */ = {
+		C333BBF31C691262007210ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -309,7 +347,7 @@
 			};
 			name = Debug;
 		};
-		C333BBB51C69062A007210ED /* Release */ = {
+		C333BBF41C691262007210ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -350,7 +388,7 @@
 			};
 			name = Release;
 		};
-		C333BBB71C69062A007210ED /* Debug */ = {
+		C333BBF61C691262007210ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
@@ -370,7 +408,7 @@
 			};
 			name = Debug;
 		};
-		C333BBB81C69062A007210ED /* Release */ = {
+		C333BBF71C691262007210ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
@@ -390,9 +428,13 @@
 			};
 			name = Release;
 		};
-		C333BBBA1C69062A007210ED /* Debug */ = {
+		C333BBF91C691262007210ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NimbleRACTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.dmrschmidt.NimbleRACTests;
@@ -400,9 +442,13 @@
 			};
 			name = Debug;
 		};
-		C333BBBB1C69062A007210ED /* Release */ = {
+		C333BBFA1C691262007210ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NimbleRACTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.dmrschmidt.NimbleRACTests;
@@ -413,32 +459,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C333BB9C1C69062A007210ED /* Build configuration list for PBXProject "NimbleRAC" */ = {
+		C333BBDB1C691262007210ED /* Build configuration list for PBXProject "NimbleRAC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C333BBB41C69062A007210ED /* Debug */,
-				C333BBB51C69062A007210ED /* Release */,
+				C333BBF31C691262007210ED /* Debug */,
+				C333BBF41C691262007210ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C333BBB61C69062A007210ED /* Build configuration list for PBXNativeTarget "NimbleRAC" */ = {
+		C333BBF51C691262007210ED /* Build configuration list for PBXNativeTarget "NimbleRAC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C333BBB71C69062A007210ED /* Debug */,
-				C333BBB81C69062A007210ED /* Release */,
+				C333BBF61C691262007210ED /* Debug */,
+				C333BBF71C691262007210ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		C333BBB91C69062A007210ED /* Build configuration list for PBXNativeTarget "NimbleRACTests" */ = {
+		C333BBF81C691262007210ED /* Build configuration list for PBXNativeTarget "NimbleRACTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C333BBBA1C69062A007210ED /* Debug */,
-				C333BBBB1C69062A007210ED /* Release */,
+				C333BBF91C691262007210ED /* Debug */,
+				C333BBFA1C691262007210ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C333BB991C69062A007210ED /* Project object */;
+	rootObject = C333BBD81C691262007210ED /* Project object */;
 }
