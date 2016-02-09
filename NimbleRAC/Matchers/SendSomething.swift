@@ -2,7 +2,12 @@ import Foundation
 import Nimble
 import ReactiveCocoa
 
-/// A Nimble matcher that succeeds when anything is sent.
+/**
+ Nimble matcher that matches if passed SignalProducer sends any Next.
+ SignalProducer is started during matching.
+
+ - returns: true if the signal producer sends any Next event
+ */
 public func sendSomething<T: SignalProducerType>() -> NonNilMatcherFunc<T> {
     return NonNilMatcherFunc { actualExpression, failureMessage in
         failureMessage.postfixMessage = "send anything"

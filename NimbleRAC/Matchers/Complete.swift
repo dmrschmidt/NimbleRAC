@@ -2,7 +2,12 @@ import Foundation
 import Nimble
 import ReactiveCocoa
 
-/// A Nimble matcher that succeeds when the SingalProducer completes.
+/**
+ Nimble matcher that matches if passed SignalProducer sends a Complete event.
+ SignalProducer is started during matching.
+
+ - returns: true if the signal producer sends Completed event.
+ */
 public func complete<T: SignalProducerType>() -> NonNilMatcherFunc<T> {
     return NonNilMatcherFunc { actualExpression, failureMessage in
         failureMessage.postfixMessage = "complete"
