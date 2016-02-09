@@ -3,10 +3,10 @@ import Nimble
 import ReactiveCocoa
 
 /**
- Nimble matcher that matches if passed SignalProducer sends any Next.
- SignalProducer is started during matching.
+ Nimble matcher that matches if passed `SignalProducer` sends any `Next`.
+ `SignalProducer` is started during matching.
 
- - returns: true if the signal producer sends any Next event
+ - returns: `true` if the `SignalProducer` sends any `Next` event
  */
 public func sendSomething<T: SignalProducerType>() -> NonNilMatcherFunc<T> {
     return NonNilMatcherFunc { actualExpression, failureMessage in
