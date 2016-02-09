@@ -31,6 +31,8 @@
 		C333BC1B1C69199B007210ED /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C333BBFE1C6912D3007210ED /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C333BC1E1C692073007210ED /* SendSomething.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333BC1D1C692073007210ED /* SendSomething.swift */; };
 		C333BC201C69207F007210ED /* SendSomethingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333BC1F1C69207F007210ED /* SendSomethingSpec.swift */; };
+		C333BC281C69C5F9007210ED /* SendSomethingWhen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333BC271C69C5F9007210ED /* SendSomethingWhen.swift */; };
+		C333BC2A1C69C605007210ED /* SendSomethingWhenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333BC291C69C605007210ED /* SendSomethingWhenSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		C333BC161C691518007210ED /* CompleteSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteSpec.swift; sourceTree = "<group>"; };
 		C333BC1D1C692073007210ED /* SendSomething.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSomething.swift; sourceTree = "<group>"; };
 		C333BC1F1C69207F007210ED /* SendSomethingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSomethingSpec.swift; sourceTree = "<group>"; };
+		C333BC271C69C5F9007210ED /* SendSomethingWhen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSomethingWhen.swift; sourceTree = "<group>"; };
+		C333BC291C69C605007210ED /* SendSomethingWhenSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSomethingWhenSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 				C333BC091C691323007210ED /* SendNext.swift */,
 				C333BC141C69150D007210ED /* Complete.swift */,
 				C333BC1D1C692073007210ED /* SendSomething.swift */,
+				C333BC271C69C5F9007210ED /* SendSomethingWhen.swift */,
 			);
 			path = Matchers;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				C333BC0C1C69132D007210ED /* SendNextSpec.swift */,
 				C333BC161C691518007210ED /* CompleteSpec.swift */,
 				C333BC1F1C69207F007210ED /* SendSomethingSpec.swift */,
+				C333BC291C69C605007210ED /* SendSomethingWhenSpec.swift */,
 			);
 			path = Matchers;
 			sourceTree = "<group>";
@@ -314,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C333BC281C69C5F9007210ED /* SendSomethingWhen.swift in Sources */,
 				C333BC151C69150D007210ED /* Complete.swift in Sources */,
 				C333BC1E1C692073007210ED /* SendSomething.swift in Sources */,
 				C333BC0A1C691323007210ED /* SendNext.swift in Sources */,
@@ -327,6 +334,7 @@
 				C333BC201C69207F007210ED /* SendSomethingSpec.swift in Sources */,
 				C333BC0D1C69132D007210ED /* SendNextSpec.swift in Sources */,
 				C333BC171C691518007210ED /* CompleteSpec.swift in Sources */,
+				C333BC2A1C69C605007210ED /* SendSomethingWhenSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,10 +3,10 @@ import Nimble
 import ReactiveCocoa
 
 /**
- Nimble matcher that matches if passed SignalProducer sends a Complete event.
- SignalProducer is started during matching.
+ Nimble matcher that matches if passed `SignalProducer` sends a `Completed` event.
+ `SignalProducer` is started during matching.
 
- - returns: true if the signal producer sends Completed event.
+ - returns: `true` if the `SignalProducer` sends `Completed` event.
  */
 public func complete<T: SignalProducerType>() -> NonNilMatcherFunc<T> {
     return NonNilMatcherFunc { actualExpression, failureMessage in
